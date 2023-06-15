@@ -4,13 +4,7 @@ const BasicInput=()=> {
     const [myData, setmyData] = useState('');
     const [allEntry, setallEntry] = useState([]);
     const AddClick = () => {
-        if (myData.trim() !== '') {
-            setallEntry((prevData) => [...prevData, myData.trim()]);   
-        }
-        else
-        {
-            alert('Please Enter Data');
-        }
+        {{(myData.trim() !== '')?setallEntry((prevData) => [...prevData, myData.trim()]):alert('Please Enter Data')}}
         setmyData('');
     };
     return (
